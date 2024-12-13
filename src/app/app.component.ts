@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Platform, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor() {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = './app/home/home.page.scss';
+    document.head.appendChild(link);
+  }
 }

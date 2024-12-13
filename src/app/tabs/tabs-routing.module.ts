@@ -20,15 +20,30 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
-      }
+        path: 'new-job',
+        loadChildren: () => import('../new-job/new-job.module').then( m => m.NewJobPageModule)
+      },
+      {
+        path: 'job',
+        loadChildren: () => import('../job/job.module').then( m => m.JobPageModule)
+      },
+      {
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
+      },
+      {
+        path: 'contacts',
+        loadChildren: () => import('../contacts/contacts.module').then( m => m.ContactsPageModule)
+      },
+      {
+        path: 'inbox',
+        loadChildren: () => import('../inbox/inbox.module').then( m => m.InboxPageModule)
+      },
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
