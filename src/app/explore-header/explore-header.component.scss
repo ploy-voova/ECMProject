@@ -7,16 +7,32 @@ ion-img {
 ion-searchbar.custom {
     font-size: 5px !important;
     --background: #FFFF;
-    --border-radius: 15px;
-    --height: 100px;
+    --border-radius: 10px;
+
     --box-shadow: 0 0 0 1px #469FD1;
     --icon-color: #469FD1;
     --color: #469FD1;
-  }
 
-//   @media (min-width: 800px){
-//     ion-img {
-//         width: 200px;
-//         height: 200px;
-//     }
-//   }
+}
+
+searchbar-input{
+    --height: 200px;
+    height: 200px;
+}
+
+  // @media (min-width: 1200px){
+  //   ion-img {
+  //       width: 1000px;
+  //       height: 1000px;
+  //   }
+
+  //   ion-searchbar .custom{
+  //     font-size: 5px !important;
+  //     --background: #FFFF;
+  //     --border-radius: 15px;
+  //     --height: 100px;
+  //     --box-shadow: 0 0 0 1px #469FD1;
+  //     --icon-color: #469FD1;
+  //     --color: #469FD1;
+  //   }
+  // }

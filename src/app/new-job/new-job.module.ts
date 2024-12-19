@@ -8,12 +8,15 @@ import { NewJobPageRoutingModule } from './new-job-routing.module';
 
 import { NewJobPage } from './new-job.page';
 
+import { ExploreHeaderComponentModule } from '../explore-header/explore-header.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    NewJobPageRoutingModule
+    NewJobPageRoutingModule,
+    ExploreHeaderComponentModule
   ],
   declarations: [NewJobPage]
 })

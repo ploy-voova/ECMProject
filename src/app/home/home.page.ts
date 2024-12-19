@@ -10,13 +10,15 @@ export class HomePage implements OnInit {
   constructor(private cdr: ChangeDetectorRef) { }
 
   ngOnInit() {
-    setTimeout(() => {
-      document.documentElement.style.setProperty('--background', '#469FD1');
-    }, 100);
+
   }
 
-  ngAfterViewInit() {
-    console.log('DOM พร้อมใช้งาน');
+  slideOpts = {
+    initialSlide: 0,  // เริ่มต้นที่ Slide แรก
+    speed: 400,       // ความเร็วในการสไลด์
+    spaceBetween: 10, // ระยะห่างระหว่าง Slide
+    slidesPerView: 1, // แสดง Slide ทีละ 1 หน้าจอ
   }
+
 
 }

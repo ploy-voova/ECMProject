@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Platform, AlertController } from '@ionic/angular';
+import { register } from 'swiper/element/bundle';
+register();
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,14 @@ import { Platform, AlertController } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = './app/home/home.page.scss';
-    document.head.appendChild(link);
+  constructor(private platform: Platform) {
+    // this.initializeApp();
   }
+  
+  // initializeApp() {
+  //   if (!this.platform.is('cordova') && !this.platform.is('capacitor')) {
+  //     // บังคับให้แอปมองว่าเป็นมือถือ
+  //     this.platform.setPlatform('mobile');
+  //   }
+  // }
 }
